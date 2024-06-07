@@ -7,14 +7,18 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server --disable traefik,servic
 echo "Copying /etc/rancher/k3s/k3s.yaml to ~/.kube/config"
 mkdir -p ~/.kube
 cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
-echo "Installing helm"
 
+kubectl config set-context --current --kubeconfig=~/.kube/config
+
+
+echo "Installing helm"
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 ./get_helm.sh
 ./get_helm.sh
 rm ./get_helm.sh
 
 # Set up kubectl completion and aliases
+echo "Set up kubectl completion and aliases"
 kubectl completion bash >> ~/.bashrc
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 echo "alias k=kubectl" >> ~/.bashrc
