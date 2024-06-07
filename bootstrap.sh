@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Ensure the script exits if any command fails
-#set -e
-
-
 # runs the given command as root (detects if we are root already)
 runAsRoot() {
   if [ $EUID -ne 0 -a "$USE_SUDO" = "true" ]; then
