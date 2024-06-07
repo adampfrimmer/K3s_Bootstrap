@@ -28,12 +28,9 @@ downloadFile() {
 
 
 
-
-
 # Execution
 
 #Stop execution on any error
-
 set -e
 
 # Set debug if desired
@@ -43,3 +40,9 @@ fi
 
 echo "Hello 1"
 ls -al
+
+curl -fsSL -o "K3s_Bootstrap.tar.gz" "https://github.com/adampfrimmer/K3s_Bootstrap/archive/refs/heads/dev.tar.gz"
+
+# Extract the downloaded tarball
+tar -xzf "K3s_Bootstrap.tar.gz"
+
