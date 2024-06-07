@@ -15,5 +15,6 @@ git clone -b "$branch"  "https://github.com/adampfrimmer/K3s_Bootstrap.git"
 cd K3s_Bootstrap
 
 # Run the script that needs to know the branch
-./helper.sh
+sudo chmod +x ./helper.sh
+
 cd ..
