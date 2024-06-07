@@ -16,6 +16,7 @@ cd K3s_Bootstrap
 
 # Run the script that needs to know the branch
 sudo chmod +x helper.sh
+./helper.sh
 
 cd ..
 
