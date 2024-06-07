@@ -9,7 +9,7 @@ mkdir -p ~/.kube
 cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
 
 echo "Installing helm"
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | sh
+curl -sfL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | sh
 
 # Set up kubectl completion and aliases
 kubectl completion bash >> ~/.bashrc
