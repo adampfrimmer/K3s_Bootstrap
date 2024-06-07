@@ -46,4 +46,6 @@ curl -fsSL -o "K3s_Bootstrap.tar.gz" "https://github.com/adampfrimmer/K3s_Bootst
 # Extract the downloaded tarball
 tar -xzf "K3s_Bootstrap.tar.gz"
 rm K3s_Bootstrap.tar.gz
+cd K3s_Bootstrap-dev
+pwd
 
