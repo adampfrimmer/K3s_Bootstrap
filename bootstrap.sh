@@ -48,4 +48,6 @@ tar -xzf "K3s_Bootstrap.tar.gz"
 rm K3s_Bootstrap.tar.gz
 cd K3s_Bootstrap-dev
 pwd
+cd ..
+rm -r K3s_Bootstrap-dev
 
