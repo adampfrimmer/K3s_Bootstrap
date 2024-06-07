@@ -8,8 +8,6 @@ echo "Copying /etc/rancher/k3s/k3s.yaml to ~/.kube/config"
 mkdir -p ~/.kube
 cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
 
-kubectl config set-context --current --kubeconfig=~/.kube/config
-
 
 echo "Installing helm"
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
