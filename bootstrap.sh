@@ -49,6 +49,9 @@ rm K3s_Bootstrap.tar.gz
 cd K3s_Bootstrap-dev
 pwd
 ls -alh
+chmod 700 ./helper.sh
+./get_helm.sh
 cd ..
 rm -r K3s_Bootstrap-dev
+
 
