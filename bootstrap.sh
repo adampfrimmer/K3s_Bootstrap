@@ -54,24 +54,24 @@ ls -al
 
 
 
-# # Define variables for the repository owner, name, and branch
-# owner="your_username"
-# repo="your_repository"
-# branch="dev"
+# # # # Define variables for the repository owner, name, and branch
+# # # owner="your_username"
+# # # repo="your_repository"
+# # # branch="dev"
 
-# # Clone the repository
-# git clone -b "$branch"  "https://github.com/adampfrimmer/K3s_Bootstrap.git"
+# # # # Clone the repository
+# # # git clone -b "$branch"  "https://github.com/adampfrimmer/K3s_Bootstrap.git"
 
-# echo "hello"
-# # Change directory to the cloned repository
-# cd K3s_Bootstrap
-# pwd
-# # Run the script that needs to know the branch
-# sudo chmod +x helper.sh
-# ./helper.sh
+# # # echo "hello"
+# # # # Change directory to the cloned repository
+# # # cd K3s_Bootstrap
+# # # pwd
+# # # # Run the script that needs to know the branch
+# # # sudo chmod +x helper.sh
+# # # ./helper.sh
 
-# cd ..
+# # # cd ..
 
-# sudo rm -r K3s_Bootstrap/
+# # # sudo rm -r K3s_Bootstrap/
 
 
