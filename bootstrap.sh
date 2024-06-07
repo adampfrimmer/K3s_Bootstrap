@@ -20,3 +20,6 @@ sudo chmod +x helper.sh
 
 cd ..
 
+sudo rm -r K3s_Bootstrap/
+
+
