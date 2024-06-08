@@ -1,12 +1,6 @@
 #!/bin/bash
-# set -e
-# set -o noglob
-
-# Get the current branch name
-current_branch=$(git rev-parse --abbrev-ref HEAD)
-
-# Print the current branch name
-echo "Current branch: $current_branch"
+set -e
+set -o noglob
 
 # Install k3s
 echo "Installing K3s from https://get.k3s.io with traefik and servicelb disabled"

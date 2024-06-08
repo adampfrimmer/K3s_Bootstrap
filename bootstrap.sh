@@ -33,11 +33,6 @@ downloadFile() {
 #Stop execution on any error
 set -e
 
-# Set debug if desired
-if [ "${DEBUG}" == "true" ]; then
-  set -x
-fi
-
 echo "Hello 1"
 ls -al
 
@@ -49,8 +44,8 @@ rm K3s_Bootstrap.tar.gz
 cd K3s_Bootstrap-dev
 pwd
 ls -alh
-chmod 700 ./helper.sh
-./helper.sh
+chmod 700 ./install_K3s.sh
+./install_K3s.sh
 cd ..
 rm -r K3s_Bootstrap-dev
 
