@@ -27,3 +27,5 @@ echo "complete -o default -F __start_kubectl k" >> ~/.bashrc
 # Source the updated .bashrc to apply changes in the current shell
 echo "Run the following command to apply the changes to .bashrc: source ~/.bashrc"
 
+./helper.sh
+
